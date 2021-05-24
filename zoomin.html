@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>ZoomIn & ZoomOut event</title>
+        <script>
+            var width=100;
+            var diff=2;
+            var intervalID=0
+            function zoomin()
+            {
+                clearInterval(intervalID);
+
+
+                intervalID=setInterval(increase,20);
+
+            }
+            function zoomout()
+            {
+                clearInterval(intervalID);
+
+
+                intervalID=setInterval(decrease,20);
+
+            }
+
+            function increase()
+            {
+                if(width<200)
+                {
+                    width=width+diff;
+                    document.getElementById("img1").style.width=width;
+                    console.log(width);
+                }
+                else
+                {
+                    clearInterval(intervalID);
+
+                }
+            }
+            function decrease()
+            {
+                if(width>100)
+                {
+                    width=width-diff;
+                    document.getElementById("img1").style.width=width;
+                    console.log(width);
+
+                }
+                else
+                {
+                    clearInterval(intervalID);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <img onmouseover="zoomin()" onmouseout="zoomout()" id="img1" src="heart.png" width=100/>
+    </body>
+</html>

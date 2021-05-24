@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Animated Effect in JS</title>
+        <link rel="stylesheet"  href="style2.css"
+    </head>
+    <body>
+        <button id='btn1' onclick="button">ClickMe</button>
+        <br><br>
+        <div id="cube" class="header">
+            <p>CUBE</p>
+        </div>
+    </body>
+    <script src="JS/jquary.js" type="text/javascript"></script>   
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+
+                $("#cube").animate({
+                    left:'150px',
+                    opacity:'1',
+                    width:'100px',
+                    height:'100px'
+
+                
+
+                },1000)
+                //alert();
+
+            })
+        })
+    </script> 
+    </html>

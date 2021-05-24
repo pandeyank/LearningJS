@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Email Validation in JS</title>
+        <script>
+        function Validation()
+        {
+            var x=document.getElementById("input").value;
+            //var regx=/a.b/;
+            var regx=/([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,6}).([a-z]{2,6})?$/;
+            if(regx.test(x))
+            {
+                document.getElementById("lblusr").innerHTML="Valid";
+                document.getElementById("lblusr").style.visibility="visible";
+                document.getElementById("lblusr").style.color="green";
+            }
+            else
+            {
+                document.getElementById("lblusr").innerHTML="Invalid";
+                document.getElementById("lblusr").style.visibility="visible";
+                document.getElementById("lblusr").style.color="red";
+
+            }
+            
+
+        }
+        </script>
+    </head>
+    <body>
+        <input id="input" name="email" placeholder="username" type="text"/>
+        <br><br>
+        <label id="lblusr" style="color:red;visibility: hidden">Invalid</label>
+        <br><br>
+        <button onclick="Validation()" type="button">Submit</button>
+    </body>
+</html>

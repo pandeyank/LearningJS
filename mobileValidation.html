@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Regular Expression Part 3</title>
+        <script>
+            function Validation()
+            {
+
+            
+            var x=document.getElementById("input").value;
+            var regx= /^[5-9][a-z]{8}0$/;
+            if(regx.test(x))
+            {
+                document.getElementById("lblusr").innerHTML="Valid";
+                document.getElementById("lblusr").style.visibility="visible";
+                document.getElementById("lblusr").style.color="green";
+
+
+            }
+            else
+            {
+
+                document.getElementById("lblusr").innerHTML="Invalid";
+                document.getElementById("lblusr").style.visibility="visible";
+                document.getElementById("lblusr").style.color="red"
+            }
+            }  
+
+
+        </script>
+    </head>
+    <body>
+        <form>
+        <input id="input" name="cellphone" placeholder="cellnumber" type="text"/>
+        <br>
+        <label id="lblusr" style="color:red;visibility: hidden">Invalid</label>
+        <br>
+        <button onclick="Validation()" type="button">Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>
+        SelectedBox in JS
+    </title>
+
+    <script type="text/javascript">
+        function f1()
+        {
+            var str=document.getElementById("selectbox");
+            alert(str.options[str.selectedIndex].value);
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <select id="selectbox">
+        <option value="Simple Snippet">Simple Snippet</option>
+        <option value="Telusko Learning">Telusko Learning</option>
+        <option value="MITS">MITS</option>
+        <option value="Unidirectional Learning">Unidirectional Learning</option>
+    </select>
+    <button onclick="f1()">Click Me</button>
+</body>
+</html>

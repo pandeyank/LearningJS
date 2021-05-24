@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>User Input HTML</title>
+        <script>
+            function f2()
+            {
+                var x=document.getElementById('text1').value;
+                var y=document.getElementById('text2').value;
+                if(x==y)
+                {
+                    document.write("<h2>The username and password is same: </h2>" +x);
+                
+                }
+                else{
+                    document.write("<h2> The username and password is different:");
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <input id="text1"   placeholder="username">
+        <br></br>
+        <input id="text2"   placeholder="password">
+        <br>
+        <button onclick="f2()">ClickMe</button>
+    </body>
+</html>

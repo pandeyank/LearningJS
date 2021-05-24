@@ -1,0 +1,1 @@
+document.write("<h1>External File linking12</h1>");

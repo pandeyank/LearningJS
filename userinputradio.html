@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Radio Button in JS</title>
+
+        <script type="text/javascript">
+
+        function f2()
+        {
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+
+
+            if(rd1.clicked==true)
+            {
+                alert("This input provided by user is:" +rd1.value);
+            }
+            else if(rd2.clicked==true)
+            {
+                alert("This input provided by user is:" +rd2.value);
+
+            }
+            else
+            {
+                alert("No input is given by the user:")
+
+            }
+        }
+      
+        </script>
+
+    </head>
+
+
+
+    <body>
+        <input id='rd1' name="grp1" type="radio" value="Male">Male</input>
+        <br>
+        <input id='id2' name="grp1" type="radio" value="Female">Female</input>
+        <br>
+        <button onclick="f2()">ClickMe</button>
+        
+    </body>
+</html>

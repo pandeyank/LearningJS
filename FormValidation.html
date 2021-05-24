@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <script>
+            function Validate()
+            {
+                document.getElementById("user");
+                document.getElementById("pass");
+
+                if((user.value.trim()=="")||(pass.value.trim()==""))
+                {
+                    alert("Without input cannot be continue");
+                    return false;
+                }
+                else
+                {
+                    return true;
+
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return Validate()" action="message.html">
+            <input id="user"  username="uname" placeholder="username" type="text"></input>
+            <br></br>
+            <input id="pass"  password="pass"  placeholder="password" type="password"/>
+            <br></br>
+            <button  type="submit">ClickMe</button>
+        </form>
+    </body>
+</html> 
